@@ -11,6 +11,7 @@
     <groupId>com.ejdevcommon</groupId>
     <artifactId>microservices-common</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>microservices-common</name>
     <description>microservices-common</description>
     <url/>
@@ -29,6 +30,13 @@
     <properties>
         <java.version>24</java.version>
     </properties>
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub HEARELMER Packages</name>
+            <url>https://maven.pkg.github.com/HEARELMER/microservices-common</url>
+        </repository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -86,12 +94,6 @@
         </plugins>
     </build>
 
-<distributionManagement>
-    <repository>
-        <id>github</id>
-        <name>GitHub HEARELMER Packages</name>
-        <url>https://maven.pkg.github.com/HEARELMER/microservices-common</url>
-    </repository>
-</distributionManagement>
+
 
 </project>
